@@ -2262,6 +2262,11 @@ body {
     pointer-events: none;
 }
 
+.validate2.not-checked button {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
 #politica {
     max-width: 767px;
 }
