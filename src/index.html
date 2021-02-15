@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./libs/slick/slick.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 
 </head>
@@ -41,31 +42,31 @@
                                 <div class="phone">8 (800) 000-00-00</div>
                                 <div>info@ssmed.ru</div>
                             </div>
-                            <button class="btn">заказать звонок</button>
+                            <button class="btn" data-fancybox="" data-src="#modal-custom">заказать звонок</button>
                         </div>
                     </div>
-                    <div class="right-menu__bot">
+                    <div class="right-menu__bot sroll-menu">
                         <ul>
                             <li>
-                                <a href="">О компании</a>
+                                <a href="#sec1">О компании</a>
                             </li>
                             <li>
-                                <a href="">Услуги</a>
+                                <a href="#sec2">Услуги</a>
                             </li>
                             <li>
-                                <a href="">Автоматизация бизнеса</a>
+                                <a href="#sec3">Автоматизация бизнеса</a>
                             </li>
                             <li>
-                                <a href="">Торговое оборудование</a>
+                                <a href="#sec4">Торговое оборудование</a>
                             </li>
                             <li>
-                                <a href="">Кейсы</a>
+                                <a href="#sec6">Кейсы</a>
                             </li>
                             <li>
-                                <a href="">Блог</a>
+                                <a href="#sec7">Блог</a>
                             </li>
                             <li>
-                                <a href="">Контакты</a>
+                                <a href="#sec8">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -92,7 +93,7 @@
                     <span>
                         Получите оперативное решение всех задач по 1С без переплат!
                     </span>
-                    <button class="btn-red">подобрать решение</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-reshenie">подобрать решение</button>
                 </div>
             </div>
         </div>
@@ -227,21 +228,21 @@
                     <div class="sec3__title">Комплексная автоматизация предприятия
                     </div>
                     <div class="sec3__item__text">на базе типовых решений 1С</div>
-                    <button class="btn-red">подобрать решение</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-reshenie1">подобрать решение</button>
                 </div>
                 <div class="sec3__item">
                     <img src="./img/sec3/arrows.svg">
                     <div class="sec3__title">Автоматизация отдельных процессов, направлений
                     </div>
                     <div class="sec3__item__text">на базе типовых решений 1С</div>
-                    <button class="btn-red">подобрать решение</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-reshenie2">подобрать решение</button>
                 </div>
                 <div class="sec3__item">
                     <img src="./img/sec3/brilliant.svg">
                     <div class="sec3__title">Индивидуальная разработка для нестандартного проекта
                     </div>
                     <div class="sec3__item__text"></div>
-                    <button class="btn-red">подобрать решение</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-reshenie3">подобрать решение</button>
                 </div>
 
 
@@ -362,7 +363,7 @@
             <div class="sec5__text">
                 Наши эксперты с удовольствием проконсультируют Вас и возьмут<br> все сложности на себя!
             </div>
-            <form id="form">
+            <form id="form" class="validate2">
                 <div class="form__wrap">
                     <div class="form__left">
                         <div class="form__left1">Оставьте заявку на получение консультации от эксперта по 1С прямо сейчас</div>
@@ -371,16 +372,16 @@
                     <div class="form__right">
                         <div class="form__input">
                             <div class="form__input__pl">Имя*</div>
-                            <input type="text">
+                            <input type="text" name="name2" required>
                         </div>
                         <div class="form__input">
                             <div class="form__input__pl">Телефон*</div>
-                            <input type="phone">
+                            <input type="phone" name="phone2" required>
                         </div>
                         <textarea class="textarea" placeholder="Комментарий по задаче"></textarea>
                         <div class="checkbox">
-                            <input type="checkbox" name="check" id="check" checked>
-                            <label for="check">Даю согласие на <a href="">обработку персональных данных</a></label>
+                            <input type="checkbox" name="check12345" id="check12345" checked>
+                            <label for="check12345">Даю согласие на <a href="#politica" data-fancybox="" data-src="#politica">обработку персональных данных</a></label>
                         </div>
                         <button type="submit" class="btn">
                             отправить
@@ -418,8 +419,8 @@
                                     </div>
 
                                     <div class="sec6__btns">
-                                        <button class="btn-red">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
-                                        <button class="btn">ПОСМОТРЕТЬ ОТЗЫВ</button>
+                                        <button class="btn-red" data-fancybox="" data-src="#modal-smeta">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
+                                        <a href="https://source.unsplash.com/IbLZjKcelpM/416x350" class="btn" data-fancybox>ПОСМОТРЕТЬ ОТЗЫВ</a>
                                     </div>
                                 </div>
                             </div>
@@ -443,8 +444,8 @@
                                     </div>
 
                                     <div class="sec6__btns">
-                                        <button class="btn-red">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
-                                        <button class="btn">ПОСМОТРЕТЬ ОТЗЫВ</button>
+                                        <button class="btn-red" data-fancybox="" data-src="#modal-smeta">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
+                                        <a href="https://source.unsplash.com/IbLZjKcelpM/416x350" class="btn" data-fancybox>ПОСМОТРЕТЬ ОТЗЫВ</a>
                                     </div>
                                 </div>
                             </div>
@@ -468,8 +469,8 @@
                                     </div>
 
                                     <div class="sec6__btns">
-                                        <button class="btn-red">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
-                                        <button class="btn">ПОСМОТРЕТЬ ОТЗЫВ</button>
+                                        <button class="btn-red" data-fancybox="" data-src="#modal-smeta">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА</button>
+                                        <a href="https://source.unsplash.com/IbLZjKcelpM/416x350" class="btn" data-fancybox>ПОСМОТРЕТЬ ОТЗЫВ</a>
                                     </div>
                                 </div>
                             </div>
@@ -514,7 +515,7 @@
                         </p>
                     </div>
 
-                    <button class="btn-red">заказать</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-tarif1">заказать</button>
                 </div>
                 <div class="sec7__item">
                     <div class="sec7__item__wrap">
@@ -528,7 +529,7 @@
                         </p>
                     </div>
 
-                    <button class="btn-red">заказать</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-tarif2">заказать</button>
                 </div>
                 <div class="sec7__item">
                     <div class="sec7__item__wrap">
@@ -542,7 +543,7 @@
                         </p>
                     </div>
 
-                    <button class="btn-red">заказать</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-tarif3">заказать</button>
                 </div>
                 <div class="sec7__item">
                     <div class="sec7__item__wrap">
@@ -556,7 +557,7 @@
                         </p>
                     </div>
 
-                    <button class="btn-red">заказать</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-tarif4">заказать</button>
                 </div>
                 <div class="sec7__item">
                     <div class="sec7__item__wrap">
@@ -567,18 +568,653 @@
                         </p>
                     </div>
 
-                    <button class="btn-red">заказать</button>
+                    <button class="btn-red" data-fancybox="" data-src="#modal-tarif5">заказать</button>
                 </div>
 
             </div>
         </div>
     </section>
-</div>
+    <section class="sec8" id="sec8">
+        <div class="container">
+            <div class="sec__title2">
+                Почему 79% клиентов выбирают <span>договор на удаленное<br> сопровождение 1С</span>
+            </div>
+            <div class="sec8__text">Удаленное обслуживание 1С — это практически моментальный вариант сопровождения вашей 1С.</div>
+            <div class="sec8__text">Вам не придется часами ждать приезда специалиста, Вы получите профессиональную помощь в течение нескольких минут. А качество, скорость и уровень сервиса при этом останутся одинаковыми независимо от того, где находится ваш офис: в соседнем
+                здании или в другом регионе.</div>
+            <div class="sec8__wrap">
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec8/1.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            Экономия бюджета
 
-<body>
-    <script src="./libs/jquery/jquery.min.js"></script>
-    <script src="./libs/slick/slick.min.js"></script>
-    <script src="./js/main.js"></script>
+                        </div>
+                        <div class="sec8__item__text">
+                            Удаленное обслуживание 1С стоит дешевле в сравнении с выездом специалиста в офис.
+                        </div>
+                    </div>
+                </div>
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec8/2.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            Оперативность реакции
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Решение вопроса специалистом начинается сразу после получения заявки on-line.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec8/3.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            Конфиденциальность данных
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Корпоративная информация защищена от несанкционированного доступа третьих лиц.
+                        </div>
+                    </div>
+                </div>
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec8/4.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            Безопасность сотрудников
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Все задачи реализуются через удаленное подключение, что безопасно для здоровья Ваших сотрудников в период пандемии.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec9" id="sec9">
+        <div class="container">
+            <div class="sec__title">Мы работаем для <span>2200 компаний</span> из <span>4 регионов</span> России</div>
+            <div class="sec9__slider">
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/1.png">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/2.svg">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/3.png">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/4.png">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/5.png">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sec9__slider__item">
+                        <img src="./img/sec9/6.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="sec10" id="sec10">
+        <div class="container">
+            <div class="sec__title"><span>Системы автоматизации</span><br> в цифрах</div>
+            <div class="sec10__row">
+                <div class="sec10__item">
+                    <div class="sec10__title">17</div>
+                    <div class="sec10__text">Лет на рынке IT - услуг</div>
+                </div>
+                <div class="sec10__item">
+                    <div class="sec10__title">100+</div>
+                    <div class="sec10__text">Профильных сертификатов от 1С</div>
+                </div>
+
+            </div>
+            <div class="sec10__row">
+                <div class="sec10__item">
+                    <div class="sec10__title">1500+</div>
+                    <div class="sec10__text">Завершенных проектов</div>
+                </div>
+                <div class="sec10__item">
+                    <div class="sec10__title">900+</div>
+                    <div class="sec10__text">Постоянных клиентов</div>
+                </div>
+            </div>
+            <img class="sec10__img" src="./img/sec10/img.svg">
+        </div>
+    </section>
+    <section class="sec11" id="sec11">
+        <div class="container">
+            <div class="sec__title">Почему <span>нам доверяют</span></div>
+            <div class="sec8__wrap">
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/1.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            КОМПЛЕКСНОСТЬ
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Предлагаем широкий спектр направлений автоматизации бизнеса «под ключ»
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/2.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            НАДЕЖНОСТЬ
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Выполняем проекты точно<br> в срок, полностью решая обозначенные задачи
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/3.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            ПРОФЕССИОНАЛИЗМ
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Подтверждаем высокую квалификацию инженеров сертификатами
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/4.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            ВЫГОДА
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Предлагаем цены на 11% ниже средних по рынку благодаря отлаженным бизнес-процессам
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/5.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            ГАРАНТИЯ
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Являемся официальными дилерами ведущих производителей и программных разработчиков
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec8__item">
+                    <div class="sec8__img">
+                        <img src="./img/sec11/6.svg">
+                    </div>
+                    <div class="sec8__item__wrap">
+                        <div class="sec8__item__title">
+                            КОМФОРТ
+
+                        </div>
+                        <div class="sec8__item__text">
+                            Решаем часть технических вопросов удаленно и консультируем в режиме 24/7.
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="sec12" id="sec12">
+        <div class="container">
+            <div class="sec12__wrap">
+                <div class="sec12__left">
+                    <div class="sec12__left__title">Остались вопросы?</div>
+                    <div class="sec12__left__text">
+                        Оставьте заявку на <b>бесплатную консультацию</b> и аудит системы автоматизации Вашей компании
+                    </div>
+                </div>
+                <div class="sec12__right">
+                    <div class="sec12__right__title">Получите<br> <b>скидку 10%</b> на дальнейшее <br>обслуживание!</div>
+                    <button class="btn" data-fancybox="" data-src="#modal-const">ЗАКАЗАТЬ АУДИТ</button>
+                    <img src="./img/sec12/i.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row footer__row1">
+                <div class="col-left">
+                    <div class="logo2">
+                        <a href="">
+                            <img src="./img/logo.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-mid">
+                    <ul class="footer__menu sroll-menu">
+                        <li><a href="#sec1">О компании</a></li>
+                        <li><a href="#sec2">Услуги</a></li>
+                        <li><a href="#sec6">Кейсы</a></li>
+                        <li><a href="#sec7">Блог</a></li>
+                        <li><a href="#sec8">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-right">
+                    <button class="btn footer-btn">заказать звонок</button>
+                </div>
+            </div>
+            <div class="footer__row footer__row2">
+                <div class="col-left">
+                    <div class="copy">
+                        <a href="">Политика конфеденциальности</a> © Системы Автоматизации 2005-2020
+                    </div>
+                    <div class="copy2">
+                        Все права защищены
+                    </div>
+                </div>
+                <div class="col-mid">
+                    <div class="footer__soc">
+                        <b>Подпишись на нас в социальных сетях -</b> будь в курсе актуальных акций и новостей!
+                        <div class="footer__soc__wrap">
+
+                            <a href="">
+                                <img src="./img/insta.svg">
+                            </a>
+                            <a href="">
+                                <img src="./img/vk.svg">
+                            </a>
+                            <a href="">
+                                <img src="./img/fb.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="footer__right__info">
+                        <div><b>8 (800) 000-00-00</b></div>
+                        <div>info@ssmed.ru</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</div>
+<form id="modal-custom" class="modal validate" style="display: none;">
+    <div class="modal__title">Заказать звонок</div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namekhjkdd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telhjkddd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check12333" id="check12333" checked="">
+        <label for="check12333">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-smeta" class="modal validate" style="display: none;">
+    <div class="modal__title">ПОЛУЧИТЬ СМЕТУ ПРОЕКТА 1С</div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namelkkk" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telkjhkjhj" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-reshenie" class="modal validate" style="display: none;">
+    <div class="modal__title">ПОДОБРАТЬ РЕШЕНИЕ 1С</div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namennn" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telvcvbcv" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+
+<form id="modal-reshenie1" class="modal validate" style="display: none;">
+    <div class="modal__title">ПОДОБРАТЬ РЕШЕНИЕ 1С</div>
+    <div class="modal__text" style="text-decoration: underline;">
+        Комплексная автоматизация предприятия
+    </div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namekkkk" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="teljhhg" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+
+<form id="modal-reshenie2" class="modal validate" style="display: none;">
+    <div class="modal__title">ПОДОБРАТЬ РЕШЕНИЕ 1С</div>
+    <div class="modal__text" style="text-decoration: underline;">
+        Комплексная автоматизация предприятия
+    </div>
+    <div class="modal__text">
+        АВТОМАТИЗАЦИЯ ОТДЕЛЬНЫХ ПРОЦЕССОВ, НАПРАВЛЕНИЙ
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="name" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="tel" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+
+<form id="modal-reshenie3" class="modal validate" style="display: none;">
+    <div class="modal__title">ПОДОБРАТЬ РЕШЕНИЕ 1С</div>
+    <div class="modal__text" style="text-decoration: underline;">
+        ИНДИВИДУАЛЬНАЯ РАЗРАБОТКА ДЛЯ НЕСТАНДАРТНОГО ПРОЕКТА
+    </div>
+    <div class="modal__text">
+        АВТОМАТИЗАЦИЯ ОТДЕЛЬНЫХ ПРОЦЕССОВ, НАПРАВЛЕНИЙ
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namejjjj" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="teljjj" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+
+<form id="modal-const" class="modal validate" style="display: none;">
+    <div class="modal__title">КОНСУЛЬТАЦИЯ<br> И АУДИТ 1С</div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namebbbvv" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telhhhh" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-tarif1" class="modal validate" style="display: none;">
+    <div class="modal__title">Универсальный</div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="namegggg" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telggg" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-tarif2" class="modal validate" style="display: none;">
+    <div class="modal__title">Оптимальный
+    </div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="nameasddd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telasdsda" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-tarif3" class="modal validate" style="display: none;">
+    <div class="modal__title">Стандартный
+    </div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="name" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="tel" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-tarif4" class="modal validate" style="display: none;">
+    <div class="modal__title">Базовый
+
+    </div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="nameasd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="telasd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<form id="modal-tarif5" class="modal validate" style="display: none;">
+    <div class="modal__title">Часовой договор
+
+
+    </div>
+    <div class="modal__text">
+        Оставьте свои контактные данные, наш менеджер перезвонит Вам в течение 15 минут!
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Имя*</div>
+        <input type="text" name="name3asd" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Номер телефона*</div>
+        <input type="text" name="teasdl" required>
+    </div>
+    <div class="form__input">
+        <div class="form__input__pl">Email</div>
+        <input type="text">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check1" id="check1" checked="">
+        <label for="check1">Я ознакомлен и согласен <a href="#politica" data-fancybox="" data-src="#politica">с условиями сбора и обработки персональных данных</a></label>
+    </div>
+    <button class="btn-red" type="submit">Отправить заявку</button>
+</form>
+<div class="modal" id="senk" style="display: none;">
+    <div class="modal__title">Спасибо!</div>
+    <div class="modal__text">
+        Ожидайте нашего звонка в ближайшее время!
+    </div>
+</div>
+<div id="politica" style="display: none">
+    ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ г. Город «день» месяц Год г. Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую Интернет-магазин «Название», расположенный на доменном
+    имени адрес магазина, может получить о Пользователе во время использования сайта Интернет-магазина, программ и продуктов Интернет-магазина. 1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ 1.1 В настоящей Политике конфиденциальности используются следующие термины: 1.1.1.
+    «Администрация сайта Интернет-магазина (далее – Администрация сайта) » – уполномоченные сотрудники на управления сайтом, действующие от имени Название организации, которые организуют и (или) осуществляет обработку персональных данных, а также определяет
+    цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. 1.1.2. «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному или определяемому
+    физическому лицу (субъекту персональных данных). 1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными
+    данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных
+    данных. 1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия
+    иного законного основания. 1.1.5. «Пользователь сайта Интернет-магазина (далее ? Пользователь)» – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт интернет-магазина. 1.1.6. «Cookies» — небольшой фрагмент данных, отправленный
+    веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта. 1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной
+    сети, построенной по протоколу IP. 2. ОБЩИЕ ПОЛОЖЕНИЯ 2.1. Использование Пользователем сайта Интернет-магазина означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя. 2.2. В случае несогласия
+    с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта Интернет-магазина. 2.3.Настоящая Политика конфиденциальности применяется только к сайту Интернет-магазина Название магазина. Интернет-магазин не контролирует
+    и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте Интернет-магазина. 2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта Интернет-магазина.
+</div>
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
+<script src="./libs/fancybox/fancybox.js"></script>
+<script src="./libs/validate/validate.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>

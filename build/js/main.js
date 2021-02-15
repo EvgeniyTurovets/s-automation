@@ -57,4 +57,72 @@ $(function() {
         $('.sec6__slider').slick('slickNext');
     })
 
+
+    $('.sec9__slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        variableWidth: true,
+    })
+
+
+    $(".sroll-menu").on("click", "a", function(event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+
+        if ($(window).width() < 1025) {
+            $('.burger').removeClass('active')
+            $('.header').removeClass('active')
+            top = top - 84;
+        }
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({ scrollTop: top }, 500);
+    });
+
+
+    function validate(form) {
+        e.preventDefault()
+        console.log(form)
+    }
+
+    $('.validate').validate({
+
+        submitHandler: function(form) {
+            $.fancybox.close();
+            $.fancybox.open({
+                src: '#senk',
+            })
+            return false;
+
+        }
+    })
+    $('.validate2').validate({
+
+        submitHandler: function(form) {
+            $.fancybox.open({
+                src: '#senk',
+            })
+            return false;
+
+        }
+    })
+    $.validator.messages.required = '';
+
+    $('.checkbox input').on('change', function() {
+        if (!$(this).is(':checked')) {
+            $(this).closest('.validate').addClass('not-checked')
+        } else {
+            $(this).closest('.validate').removeClass('not-checked')
+        }
+    })
+    $('.validate2 .checkbox input').on('change', function() {
+        if (!$(this).is(':checked')) {
+            $(this).closest('.validate2').addClass('not-checked')
+        } else {
+            $(this).closest('.validate2').removeClass('not-checked')
+        }
+    })
+
 })
